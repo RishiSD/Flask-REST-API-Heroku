@@ -38,4 +38,4 @@ __`GET`__`/stores`: Get a list of all the stores.
 `password`_`(string)`_: Password of the API user.
 
 #### Endpoints
-__`GET`__`/register`: Add or Register a user to get JWT token for add, update or delete activities.
+__`POST`__`/register`: Add or Register a user to get JWT token for add, update or delete activities.
