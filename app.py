@@ -18,6 +18,10 @@ api = Api(app)
 
 jwt = JWT(app, authenticate, identity)
 
+@app.route('/')
+def index():
+    return '<h2>Please refer the <a href="https://github.com/RishiSD/Flask-REST-API-Heroku/blob/master/readme.md">documentation</a> to access valid endpoints for the API</h2>'
+
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')
 api.add_resource(UserRegister, '/register')
